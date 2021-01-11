@@ -1,0 +1,66 @@
+1.Variable 
+    terms :
+    shadowing : same name identifier in same scope.
+    Rendering : adding value to variable.
+    Hoisting : 
+
+    Declare : let x;
+    Rendering : x = 10;
+    Initializing : Declare & Rendering at same time. let y = 12;
+
+    Difference Between var, let and const. 
+    var : Old  : function scope
+    let : new   : Block scope
+    const : for Constant value.
+
+    function scope vs. block scope
+    ```````````````````````````````
+    example : 
+    function f1() {
+        var x = 10; => function scope
+        if(x == 10) {
+            => block scope
+            let y =10;
+            const z= 21;
+        }
+    }
+
+2. Datatype 
+    syntax : variableType variable : Datatype = value;
+    example : let x : any = 12;
+    parent : any
+
+Primitive Type :
+memory : stack 
+type : value type
+
+    a. Number
+        i. signed : -10
+        ii. unsigned : 10
+        iii. float : 12.2
+        iv. double: 120.232
+        v. exponent : 1.2e3 => 1.2* 10 to power 3(1000)
+
+    b. String 
+        i. single quote : ''
+        ii. double quote : ""
+        iii. string literals:  ${}
+
+    c. Boolean : 
+        true and false (but not 1 and 0)
+
+    d. Undefined (variable is rendered without datatype)
+    e. null
+
+NonPrimitive type 
+memory : Heap
+type : reference type
+
+    a. Array 
+        properties : Reducing Overhead (sequentially arrangement) and Complexity (single reference)
+        Typescript array : Hold only similar type of data.
+        Tuple : Hold disimilar type of data.
+        memory for array in Ts can be allocated by "ArrayConstructor" or "Metacharacter".
+        
+    b. Object
+    c. Regular Expression
